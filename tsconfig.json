@@ -1,16 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2016",
+    "target": "ESNext",
     "module": "CommonJS",
     "outDir": "dist",
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules", "test", "dist", "**/*.test.ts", "jest.config.ts"]
 }

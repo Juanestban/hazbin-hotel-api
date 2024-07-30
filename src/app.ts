@@ -1,12 +1,10 @@
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
-import dotenv from 'dotenv'
 
 import env from './environments/env';
 import { apiRoute } from './routers/api.routes';
 
-dotenv.config({path: env.isDevelopment ? '.env.local' : '.env.prod'})
 const app = express();
 
 app.use(cors());
